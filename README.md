@@ -11,7 +11,9 @@ vim daemon.json
 // daemon.json file
 {
     "graph": "/storage/docker-data",
-    "storage-driver": "overlay"
+    "storage-driver": "overlay",
+    "hosts": ["tcp://127.0.0.1:4243", "unix:///var/run/docker.sock"]
+
 }
 
 ```
